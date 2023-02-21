@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,17 +7,15 @@
  */
 int main(void)
 {
-  char s[] = "_putchar\n";
-  int i;
-
-  for (i = 0; i < 9; i++)
-    {
-      /* write character to stdout */
-      write(1, &s[i], 1);
-    }
-  /* write new line character to stdout */
-  write(1, &"\n", 1);
-
-  return (0);
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
+    _putchar('\n');
+    return (0);
 }
 
