@@ -21,7 +21,7 @@ while (*src != '\0')
 	src++;
 }
 
-	*dest_end = '\0';
+*dest_end = '\0';
 
 return dest;
 }
