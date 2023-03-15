@@ -23,7 +23,7 @@ if (grid == NULL)
 for (i = 0; i < height; i++)
 {
 grid[i] = malloc(sizeof(int) * width);
-	if (grid[i] == NULL)
+if (grid[i] == NULL)
         {
             /* free previously allocated memory */
 		for (j = 0; j < i; j++)
@@ -37,4 +37,3 @@ grid[i] = malloc(sizeof(int) * width);
 
 return (grid);
 }
-
