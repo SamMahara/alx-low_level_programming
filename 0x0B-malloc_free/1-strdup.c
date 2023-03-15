@@ -12,23 +12,23 @@
  */
 char *_strdup(char *str)
 {
-    char *dup;
-    unsigned int i, len;
+char *dup;
+unsigned int i, len;
 
-    if (str == NULL)
-        return (NULL);
+if (str == NULL)
+	return (NULL);
 
-    len = 0;
-    while (str[len] != '\0')
-        len++;
+len = 0;
+while (str[len] != '\0')
+	len++;
 
-    dup = malloc(sizeof(char) * (len + 1));
-    if (dup == NULL)
-        return (NULL);
+dup = malloc(sizeof(char) * (len + 1));
+if (dup == NULL)
+	return (NULL);
 
-    for (i = 0; i <= len; i++)
-        dup[i] = str[i];
+for (i = 0; i <= len; i++)
+	dup[i] = str[i];
 
-    return (dup);
+return (dup);
 }
 
